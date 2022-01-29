@@ -12,12 +12,13 @@ namespace TRMDataManager.Controllers
     [Authorize]
     public class UserController : ApiController
     {
-        public List<UserModel> GetById(string id)
+        [HttpGet]
+        public UserModel GetById(string id)
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
             UserData data = new UserData();
 
-            return data.GetUserById(userId);
+            return data.GetUserById(userId).First();
         }  
     }
 }
