@@ -161,6 +161,7 @@ namespace TRMDesktopUI.ViewModels
 
 
             SelectedProduct.QuantityInStock -= ItemQuantity;
+          
             ItemQuantity = 1;
             NotifyOfPropertyChange(() => SubTotal);
         }
