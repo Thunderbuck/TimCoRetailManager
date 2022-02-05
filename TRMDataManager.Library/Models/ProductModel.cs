@@ -32,5 +32,10 @@ namespace TRMDataManager.Library.Models
         /// The quantity in stock
         /// </summary>
         public int QuantityInStock { get; set; }
+
+        /// <summary>
+        /// Indicator that product is taxable
+        /// </summary>
+        public bool IsTaxable { get; set; }
     }
 }
