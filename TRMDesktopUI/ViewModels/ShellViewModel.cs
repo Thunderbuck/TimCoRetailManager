@@ -18,7 +18,6 @@ namespace TRMDesktopUI.ViewModels
         {
             _events = events;
             _salesVM = salesVM;
-            _container = container;
 
             _events.Subscribe(this);
             
