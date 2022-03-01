@@ -9,6 +9,7 @@ namespace TRMDataManager.Library
 {
     public class ConfigHelper
     {
+        // TODO: Move this from config to API
         public static decimal GetTaxRate()
         {
             string rateText = ConfigurationManager.AppSettings["taxRate"];
@@ -19,7 +20,6 @@ namespace TRMDataManager.Library
             {
                 throw new ConfigurationErrorsException("The tax rate is not set up properly");
             }
-
             return output;
         }
     }

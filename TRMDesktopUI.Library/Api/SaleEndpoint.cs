@@ -23,7 +23,7 @@ namespace TRMDesktopUI.Library.Api
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    // log successful call?
+                    // Log successful call?
                 }
                 else
                 {

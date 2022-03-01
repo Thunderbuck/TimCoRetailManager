@@ -7,6 +7,6 @@ begin
 
 	select Id
 	from dbo.Sale
-	where CashierId = @CashierId and SaleDate = @SaleDate
+	where CashierId = @CashierId and SaleDate = @SaleDate;
 end
 
